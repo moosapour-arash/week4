@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
-
 const nextConfig = {
-    reactStrictMode: true,
+    reactStrictMode: false,
     webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
         if (!isServer) {
             config.plugins.push(
